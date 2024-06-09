@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>맛집지도</title>
+    <meta name="author" content="맛집지도" />
+    <meta name="description" content="맛집지도 서비스" />
+    <meta name="keywords" content="맛집지도, 유튜버맛집, 맛집유튜버" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="map.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="inner">
+        <div class="nav-container">
+          <h1 class="nav-title">맛집지도</h1>
+          <button class="nav-contact" onclick="location.href='foodfind.html'">
+            음식검색
+          </button>
+          <button class="nav-contact" onclick="location.href='random.html'">
+            랜덤뽑기
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="category">
+        <div class="inner">
+          <div class="category-container">
+            <h2 class="category-title">맛집지도 카테고리를 선택해보세요</h2>
+            <div class="category-list">
+              <button class="category-item" id="korea">한식</button>
+              <button class="category-item" id="china">중식</button>
+              <button class="category-item" id="japan">일식</button>
+              <button class="category-item" id="america">양식</button>
+              <button class="category-item" id="wheat">분식</button>
+              <button class="category-item" id="meat">구이</button>
+              <button class="category-item" id="sushi">회/초밥</button>
+              <button class="category-item" id="etc">기타</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="map" class="inner"></div>
+    </main>
+
+    <div class="inforwindow">
+      <div class="inforwindow-img-container">
+        <img src="" class="inforwindow-img" />
+      </div>
+      <div class="inforwindow-body">
+        <h5 class="inforwindow-title"></h5>
+        <p class="inforwindow-address"></p>
+        <a href="" class="inforwindow-btn" target="_blank"></a>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2dd2fbaa3899d7d929feba25742ad586&libraries=services"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
+      integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="axios-script.js"></script>
+  </body>
+</html>
